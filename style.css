@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.container {
+  display: grid;
+  grid-template-rows:10vh minmax(20vh, 900px) minmax(20vh, 1000px) minmax(10vh, auto) minmax(20vh, auto) minmax(20vh, 707px) minmax(5vh, auto);
+  grid-template-columns: 3vw 94vw 3vw;
+}
+.socialsticky{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 10;
+  background-color: #5d1ff2;
+  position: fixed;
+  top: 50%;
+  left: 31px;
+  width: 55px;
+  height: 190px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:hover{
+  color: #5d1ff2;
+  cursor: pointer;
+}
+
+/* Header Part Start  */
+header {
+  display: flex;
+  font-family: 'Roboto Flex', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+header div{
+  font-size: 20px;
+}
+.inner {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  position: relative;
+  right: 44px;
+}
+/* Header Part End */
+
+
+/* Carousel Start */
+.cr {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: aqua;
+  position: relative;
+  background: url("gallary/_OMM4490.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.crimg {
+  width: 100%;
+}
+.name {
+  font-family: 'Secular One', sans-serif;
+  position: absolute;
+  font-size: 260px;
+  color: white;
+}
+.fname {
+  top: 140px;
+  left: 427px;
+  letter-spacing: 5px;
+}
+.lname {
+  top: 360px;
+  left: 490px;
+  letter-spacing: 5px;
+}
+.prof {
+  position: absolute;
+  bottom: 9px;
+  left: 409px;
+  color: white;
+  font-size: 30px;
+}
+/* Carousel End */
+
+
+/* Story Start */
+.story {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+}
+.phototitle {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mystory {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.styphoto {
+  width: 50%;
+  background-image: url("gallary/styphoto.jpg");
+  background-size: 50%;
+  background-attachment: fixed;
+}
+.ms-1 {
+  font-size: 50px;
+  width: 33%;
+}
+.ms-2 {
+  width: 33%;
+  line-height: 150%;
+  font-size: 18px;
+}
+.mystory button {
+  background-color: #5d1ff2;
+  color: white;
+  width: 109px;
+  height: 40px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.mystory button:hover{
+  background-color: black;
+}
+/* Story End */
+
+/* Gallery Start */
+.photogallery {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  display: flex;
+  justify-content: space-around;
+}
+.photogallery > div{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.col1 > img{
+  width: 100%;
+  margin-bottom: 14px;
+}
+.col2 > img{
+  width: 100%;
+  margin-bottom: 14px;
+}
+.col3 > img{
+  width: 100%;
+  margin-bottom: 14px;
+}
+/* Gallery End */
+
+
+/* Follow Footer Start */
+.follow {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  background-color: brown;
+}
+footer {
+  grid-column: 1/4;
+  grid-row: 7/8;
+}
+.follow {
+  background-color: #5d1ff2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.follow-bottom {
+  display: flex;
+  height: 300px;
+  width: 50%;
+  justify-content: space-between;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+input {
+  width: 200px;
+  height: 35px;
+  padding: 3px;
+  padding-left: 12px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+textarea {
+  width: 410px;
+  height: 116px;
+  resize: none;
+  padding: 12px 10px 3px 16px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+.form-rt {
+  display: flex;
+}
+.right > div {
+  margin: 10px;
+}
+.form-rt > div {
+  margin-right: 10px;
+}
+.buttons button {
+  background-color: #5d1ff2;
+  border: none;
+  margin: 0 20px;
+}
+label {
+  color: white;
+  font-size: 14px;
+}
+button#submit-bt {
+  width: 81px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: 10px;
+  border: none;
+  background-color: #5d1ff2;
+  color: white;
+  font-size: 16px;
+}
+/* Follow Footer End */
